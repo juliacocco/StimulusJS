@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stimulus 101</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div data-controller="zelda" data-zelda-sound="secret.mp3">
+      <button data-action="click->zelda#play" data-target="zelda.trigger" class="btn btn-primary btn-lg">
+        Secret
+      </button>
+    </div>
+
+    <div data-controller="zelda" data-zelda-sound="treasure.mp3">
+      <button data-action="click->zelda#play" data-target="zelda.trigger" class="btn btn-success btn-lg">
+        Treasure
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
